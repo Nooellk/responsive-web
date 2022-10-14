@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("bg.png");
+  background-color: black;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  color: white;
+}
+/* header start */
+
+header {
+  height: 100px;
+  border-bottom: 2px solid rgba (255, 255, 255, 0.6);
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+header nav .logo a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  column-gap: 30px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+nav ul li a:hover {
+  color: #0ba2c0;
+}
+nav .menu {
+  display: flex;
+  align-items: center;
+  column-gap: 48px;
+}
+nav .menu .menu-button {
+  color: #0ba2c0;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 12px 24px;
+  border-radius: 56px;
+  transition: all 0.25s ease;
+}
+nav .menu .menu-button:hover {
+  background-color: #0ba2c0;
+  color: white;
+}
+
+/* header end */
+/* section start */
+.content{
+    color: white;
+    padding-top: 150px;
+}
+.content h1{
+    font-size: 40px;
+    text-align: center;
+}
+.content p{
+    text-align: center;
+    font-size: 24px;
+    margin-top: 32px;
+}
+.content .links{
+    display: flex;
+    justify-content:center;
+    margin-top: 48px;
+    column-gap: 16px;
+}
+.content .links a{
+    background-color: white;
+    padding: 20px;
+    width: 280px;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 56px;
+    transition: all .25s ease-in;
+    
+}
+.content .links a:hover{
+    background-color:#0ba2c0;
+    color:white
+    
+}
+
+
+/* section end */
+/* responsive start */
+@media(max-widht:576px){
+    .container{
+        widht:100px;
+    }
+
+}
+
+/* responsive end */
